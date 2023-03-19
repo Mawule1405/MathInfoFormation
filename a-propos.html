@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="a-propos.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos</title>
+</head>
+<body>
+    <header>
+        <!.. L'en tete de mon site web. elle comprend le titre et le logo >
+           <div><img src="image/logo.png" alt="Logo du site" class="logo" ></div>
+            <h1  > MathInfoFormation</h1>
+            <div><img src="image/logo.png" alt="Logo du site" class="logo" ></div>
+    </header>
+    
+    <!..  la barre de navigation: elle est composée de onglet  Accueil, Formation et Actualités  Présentation,>
+    <nav class="navigateur">
+        
+            <div><a href="index.html"  title="Accueil" >Accueil</a></div>
+            <div><a href="discipline/formations.html" title="Accéder aux formations">Formations</a></div>
+            <div><a href="a-propos.html"  title="A propos">A propos</a></div>
+    </nav>
+
+    <main>
+        <!-- Formulaire de renseignement -->
+        <section class="section-formulaire">
+            <h3 class="entete-formulaire">Nous contactez</h3>
+            <form action="" class="formulaire">
+                <div>
+                    <p><label for="nom">Nom<sup>*</sup>:</label></p>
+                    <p><input type="text" id="nom"  required></p>
+                </div>
+                <div>
+                    <p><label for="prenom">Prénoms<sup>*</sup>:</label></p>
+                    <p><input type="text" id="prenom"  required></p>
+                </div>
+                <div>
+                    <p><label for="e-mail">Email<sup>*</sup>:</label></p>
+                    <p><input type="email" id="e-mail"  required></p>
+                </div>
+                <div>
+                    <p><label for="message">Message<sup>*</sup>:</label></p>
+                    <p><textarea name="message" id="message" cols="25" rows="10"></textarea></p>
+                </div>
+                <p id="bouton"><input type="submit" value=" Envoyer"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="logo-footer"><img src="image/logo.png" alt="Logo du site" class="logo" ></div>
+        <div class="icone-footer">
+            <div><img src="image/icone-whatsapp.jpg" alt=""></div>
+            <div><img src="image/icone-facebook.jpg" alt=""></div>
+            <div><img src="image/icone-tiktok.jpg" alt=""></div>
+            <div><img src="image/icone-youtube.jpg" alt=""></div>
+        </div>
+    </footer>
+</body>
+
+
+
+
+</html>

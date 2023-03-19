@@ -1,0 +1,270 @@
+html{
+    background: linear-gradient(rgb(101, 101, 230), white);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: sans-serif;
+    
+}
+/* l'entete */
+header{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, orange, blue);
+    color: rgb(235, 137, 99);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header h1{
+    font-family: "Arial Black";
+    font-size: 30px;
+}
+
+/* mise en forme du logo */
+header div img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: black;
+    width: 50px;
+    height: 40px;
+    border-radius: 100px;
+ }
+
+ @media screen and (max-width:1500px){
+    header h1{
+        font-size: 15px;
+       
+    }
+    header div img{
+        width: 30px;
+    }
+ }
+@media screen and (max-width:300px){
+    header {
+        margin-left: 3px ;
+        margin-right: 3px;
+        font-size: 10px;
+    }
+    html{
+        padding: 3px;
+    }
+}
+/* Mise en forme de la barre de navigation */
+nav{
+    display: flex;
+    justify-content:space-around;
+    color: white;
+    background: linear-gradient(90deg, blue, orange);
+    padding: 10px  5px 10px 5px;
+}
+
+nav div a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 500px){
+    nav div a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:300px){
+    nav div a{
+        font-size: 10px;
+    }
+}
+
+/* Mise en page de la section de présenation des projets */
+.section-affichage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+}
+
+.section-affichage:hover{
+    border-left: 3px;
+    border-bottom: 3px;
+    border-color: blue;
+}
+.section-affichage p{
+    font-size: 20px;
+    border: 2px solid none;
+    text-align: justify;
+}
+
+.section-affichage div img{
+    width: 90%;
+    padding: 20px;
+}
+
+@media screen and (max-width:400px){
+    .section-affichage{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .section-affichage div p{
+        padding: 0px 10px 10px 10px;
+
+    }
+
+    .section-affichage div img{
+        width: 200px;
+
+    }
+    .section-affichage aside{
+        font-size: 30px;
+    }
+
+    .section-affichage:hover{
+        border-left: 5px;
+        border-bottom: 5px;
+        border-color: blue;
+    }
+}
+/* Mise en forme de la section de présentation des documents pdf */
+.entete-section h2{
+    color: rgb(255, 94, 0);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.entete-section h3{
+    color: rgb(219, 89, 28);
+    font-weight: bold;
+    font-size: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.entete-section  p em{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.entete-section p{
+    text-align: justify;
+}
+.entete-section h4{
+    text-align: center;
+    color: blue;
+    font-size: 100%;
+}
+
+
+.section-document{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    margin-left: 20px;
+    
+ }
+
+ .section-document div{
+    padding: 10px;
+
+    border-radius: 50px;
+
+ }
+
+ .section-document div:hover{
+    text-decoration: underline;
+ }
+
+ .section-document img{
+    width: 100px;
+ }
+.section-document a{
+    display: block;
+    text-align: center;
+    padding-left: 10px;
+    text-decoration: none;
+    gap: 20px;
+    color: black;
+    
+}
+@media screen and (max-width:800px){
+    .section-document  div  img{
+        width: 50px;
+    }
+    .section-document{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 5px ;
+        padding-right: 5px;
+        gap: 5px;
+    }
+    .section-document  a{
+        font-size: 12px;
+
+    }
+    .section-document div{
+        justify-content: center;
+        padding-left: 20px;
+    }
+}
+
+/* Mise en forme de la section des souvenirs */
+.section-souvenir{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+      flex-wrap: wrap;
+    
+}
+
+.section-souvenir img{
+    width: 250px;
+    height: 200px;
+    
+}
+/* mise en forme du pied de page */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, orange, blue);
+    color: rgb(235, 137, 99);
+    font-size: 1em;
+    background-attachment: fixed;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.logo-footer img{
+    width: 100px;
+    border-radius: 100%;
+}
+
+.icone-footer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 20px;
+    justify-content: center;
+    margin: 30px 10px;
+    gap: 50px;   
+}
+.icone-footer div img{
+    width: 50px;
+}
+ @media screen and (max-width:500px){
+    .logo-footer img{
+        width: 30px;
+        border-radius: 100px;
+        padding-left: 10px;
+        padding-top: 10px ;
+    }
+    .icone-footer{
+        margin: 10px 10px;
+        gap: 10px;
+        
+    }
+    .icone-footer div img{
+        width: 20px;
+    }
+ }
+
+ 
