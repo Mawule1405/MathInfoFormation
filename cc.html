@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barre de navigation cliquable</title>
+	<style>
+		.navbar {
+			display: none; /* On cache la barre de navigation au départ */
+		}
+	</style>
+	<script>
+		function afficherNavbar() {
+			var navbar = document.getElementById("navbar");
+			if (navbar.style.display === "none") {
+				navbar.style.display = "block"; /* Si la barre de navigation est cachée, on l'affiche */
+			} else {
+				navbar.style.display = "none"; /* Si la barre de navigation est affichée, on la cache */
+			}
+		}
+	</script>
+</head>
+<body>
+	<a href="#" onclick="afficherNavbar()">Afficher la barre de navigation</a>
+	<div id="navbar" class="navbar">
+		<ul>
+			<li><a href="#">Accueil</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">A propos</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+</body>
+</html>

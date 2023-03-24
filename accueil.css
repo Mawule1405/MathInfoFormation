@@ -1,270 +1,273 @@
-html{
-    background: linear-gradient(rgb(101, 101, 230), white);
-    font-size: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: sans-serif;
-    
+/* Mise à jour de la page html */
+h3{
+    font-size: 200%;
 }
-/* l'entete */
-header{
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(90deg, orange, blue);
-    color: rgb(235, 137, 99);
-    padding-left: 10px;
-    padding-right: 10px;
-}
-header h1{
-    font-family: "Arial Black";
-    font-size: 30px;
-}
+/* Mise à jour de l'entete */
 
-/* mise en forme du logo */
+header div{
+    border-bottom: 5px solid black;
+    padding-bottom: 0px ;
+}
 header div img{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: black;
-    width: 50px;
-    height: 40px;
-    border-radius: 100px;
- }
+    width: 10%;
+    margin-left: 45%;
+    margin-bottom: 0px;
 
- @media screen and (max-width:1500px){
-    header h1{
-        font-size: 15px;
-       
-    }
-    header div img{
-        width: 30px;
-    }
- }
-@media screen and (max-width:300px){
-    header {
-        margin-left: 3px ;
-        margin-right: 3px;
-        font-size: 10px;
-    }
-    html{
-        padding: 3px;
-    }
-}
-/* Mise en forme de la barre de navigation */
-nav{
-    display: flex;
-    justify-content:space-around;
-    color: white;
-    background: linear-gradient(90deg, blue, orange);
-    padding: 10px  5px 10px 5px;
-}
 
-nav div a{
-    text-decoration: none;
-    color: white;
+     
 }
-
-@media screen and (max-width: 500px){
-    nav div a{
-        font-size: 15px;
-    }
-}
-@media screen and (max-width:300px){
-    nav div a{
-        font-size: 10px;
-    }
-}
-
-/* Mise en page de la section de présenation des projets */
-.section-affichage{
+header nav {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-around;
   
+    font-size: 300%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+   background-color: rgb(204, 194, 182);
 }
 
-.section-affichage:hover{
-    border-left: 3px;
-    border-bottom: 3px;
-    border-color: blue;
-}
-.section-affichage p{
-    font-size: 20px;
-    border: 2px solid none;
-    text-align: justify;
-}
-
-.section-affichage div img{
-    width: 90%;
-    padding: 20px;
-}
-
-@media screen and (max-width:400px){
-    .section-affichage{
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-    }
-    .section-affichage div p{
-        padding: 0px 10px 10px 10px;
-
-    }
-
-    .section-affichage div img{
-        width: 200px;
-
-    }
-    .section-affichage aside{
-        font-size: 30px;
-    }
-
-    .section-affichage:hover{
-        border-left: 5px;
-        border-bottom: 5px;
-        border-color: blue;
-    }
-}
-/* Mise en forme de la section de présentation des documents pdf */
-.entete-section h2{
-    color: rgb(255, 94, 0);
-    font-style: italic;
-    font-weight: bold;
-    font-size: 100%;
-    margin-bottom: 15px;
+header nav p{
     text-align: center;
+    padding-top: 2%;
+   
 }
 
-.entete-section h3{
-    color: rgb(219, 89, 28);
-    font-weight: bold;
-    font-size: 100%;
-    margin-bottom: 5px;
-    text-align: center;
-}
-.entete-section  p em{
-    font-weight: bold;
-    text-decoration: underline;
-}
-.entete-section p{
-    text-align: justify;
-}
-.entete-section h4{
-    text-align: center;
-    color: blue;
-    font-size: 100%;
-}
-
-
-.section-document{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    margin-left: 20px;
-    
- }
-
- .section-document div{
-    padding: 10px;
-
-    border-radius: 50px;
-
- }
-
- .section-document div:hover{
-    text-decoration: underline;
- }
-
- .section-document img{
-    width: 100px;
- }
-.section-document a{
-    display: block;
-    text-align: center;
-    padding-left: 10px;
+ header nav p a{
     text-decoration: none;
-    gap: 20px;
+    font-weight: bold;
     color: black;
-    
-}
-@media screen and (max-width:800px){
-    .section-document  div  img{
-        width: 50px;
-    }
-    .section-document{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-left: 5px ;
-        padding-right: 5px;
-        gap: 5px;
-    }
-    .section-document  a{
-        font-size: 12px;
+    border: 4px solid;
+    padding: 3%;
+    border-radius: 30%;
+ 
+ }
+ header nav p a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+    border: 4px solid;
+    padding: 3%;
+    border-radius: 50%;
+    background-color: rgb(144, 171, 221);
+ }
 
-    }
-    .section-document div{
-        justify-content: center;
-        padding-left: 20px;
-    }
-}
+ /* Mise en forme du corps de page */
+ main{
+    margin-top: 3%;
+    background-color: beige;
+ }
 
-/* Mise en forme de la section des souvenirs */
-.section-souvenir{
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-      flex-wrap: wrap;
-    
-}
-
-.section-souvenir img{
-    width: 250px;
-    height: 200px;
-    
-}
-/* mise en forme du pied de page */
-footer{
+ /* Mise en forme des sections de la page */
+ section{
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(90deg, orange, blue);
-    color: rgb(235, 137, 99);
-    font-size: 1em;
-    background-attachment: fixed;
-    margin-top: 40px;
-    justify-content: space-between;
-}
+    
+ }
 
-.logo-footer img{
-    width: 100px;
-    border-radius: 100%;
-}
+ section div{
+    width: 25%;
+    font-size: 200%;
+ }
 
-.icone-footer{
-    display: flex;
-    flex-wrap: wrap;
-    height: 20px;
-    justify-content: center;
-    margin: 30px 10px;
-    gap: 50px;   
-}
-.icone-footer div img{
-    width: 50px;
-}
- @media screen and (max-width:500px){
-    .logo-footer img{
-        width: 30px;
-        border-radius: 100px;
-        padding-left: 10px;
-        padding-top: 10px ;
-    }
-    .icone-footer{
-        margin: 10px 10px;
-        gap: 10px;
-        
-    }
-    .icone-footer div img{
-        width: 20px;
-    }
+ section div img{
+    width: 90%;
+ }
+
+ section article{
+    width: 45%;
+    font-size: 200%;
+    text-align: justify;
+    margin-right: 2%;
  }
 
  
+ section aside{
+    width: 25%;
+    font-size: 150%;
+ }
+/* mise en forme du pied de page */
+ footer{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   text-align: center;
+   background-color: rgb(192, 171, 171);
+ }
+
+ @media screen and (min-width:450px) and (max-width:1024px ){
+    /* Mise à jour de la page html */
+h3{
+    font-size: 70%;
+}
+/* Mise à jour de l'entete */
+
+header div{
+    border-bottom: 1px solid black;
+    padding-bottom: 0px ;
+}
+header div img{
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 0px;   
+}
+header nav {
+    width: 100%;
+    justify-content: space-around;
+    font-size: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+   background-color: rgb(204, 194, 182);
+}
+
+header nav p{
+    text-align: center;
+    padding-top: 2%;
+   
+}
+ header nav p a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border: 4px solid;
+    padding: 3%;
+    border-radius: 30%;
+ 
+ }
+ header nav p a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+    border: 4px solid;
+    padding: 3%;
+    border-radius: 50%;
+    background-color: rgb(144, 171, 221);
+ }
+ /* Mise en forme du corps de page */
+ main{
+
+    background-color: beige;
+ }
+
+ /* Mise en forme des sections de la page */
+ section{
+   display: block;
+    
+ }
+ section div{
+    text-align: center;
+    font-size: 150%;
+ }
+ 
+
+ section div img{
+    width: 400%;
+ }
+
+ section article{
+    width: 100%;
+    font-size: 150%;
+    text-align: justify;
+    margin-right: 5%;
+ }
+
+ 
+ section aside{
+    font-size: 100%;
+ }
+ footer{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   text-align: center;
+   background-color: rgb(141, 136, 129);
+ }
+ }
+
+ /* Responsivite a un ecran compris entre 450 et 1280 */
+ @media screen and (max-width:450px){
+    /* Mise à jour de la page html */
+h3{
+    font-size: 60%;
+}
+/* Mise à jour de l'entete */
+
+header div{
+    border-bottom: 1px solid black;
+    padding-bottom: 0px ;
+}
+header div img{
+    width: 20%;
+    margin-left: 45%;
+    margin-bottom: 0px;   
+}
+header nav {
+    width: 100%;
+    justify-content: space-around;
+    font-size: 60%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+   background-color: rgb(204, 194, 182);
+}
+
+header nav p{
+    text-align: center;
+    padding-top: 2%;
+   
+}
+ header nav p a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border: 4px solid;
+    padding: 3%;
+    border-radius: 30%;
+ 
+ }
+ header nav p a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+    border: 4px solid;
+    padding: 3%;
+    border-radius: 50%;
+    background-color: rgb(144, 171, 221);
+ }
+ /* Mise en forme du corps de page */
+ main{
+
+    background-color: beige;
+ }
+
+ /* Mise en forme des sections de la page */
+ section{
+   display: block;
+    
+ }
+ section div{
+    text-align: center;
+    font-size: 100%;
+ }
+ 
+
+ section div img{
+    width: 400%;
+ }
+
+ section article{
+    width: 100%;
+    font-size: 100%;
+    text-align: justify;
+    margin-right: 2%;
+ }
+
+ 
+ section aside{
+    font-size: 150%;
+ }
+ footer{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   text-align: center;
+   background-color: rgb(141, 136, 129);
+ }
+ }

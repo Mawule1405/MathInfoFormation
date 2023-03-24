@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="accueil.css">
+        <link rel="stylesheet" href="formation.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formations</title>
+
+        <script>
+            function afficherNavbar() {
+                var navbar = document.getElementById("navbar");
+                if (navbar.style.display === "none") {
+                    navbar.style.display = "block"; /* Si la barre de navigation est cachée, on l'affiche */
+                } else {
+                    navbar.style.display = "none"; /* Si la barre de navigation est affichée, on la cache */
+                }
+            }
+        </script>
+        <script>
+            function afficherNavmath() {
+                var navmath = document.getElementById("navmath");
+                if (navmath.style.display === "none") {
+                    navmath.style.display = "block"; /* Si la barre de navigation est cachée, on l'affiche */
+                } else {
+                    navmath.style.display = "none"; /* Si la barre de navigation est affichée, on la cache */
+                }
+            }
+        </script>
+        <script>
+            function afficherNavinfo() {
+                var navinfo = document.getElementById("navinfo");
+                if (navinfo.style.display === "none") {
+                    navinfo.style.display = "block"; /* Si la barre de navigation est cachée, on l'affiche */
+                } else {
+                    navinfo.style.display = "none"; /* Si la barre de navigation est affichée, on la cache */
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- L'entete du site du groupe -->
+        <header>
+            <!-- le logo du site -->
+            
+            <!-- la barre de navigatio comportant -->
+            <div><a href="index.html"><img src="image/MathInfoFormation.png" alt="MathInfoFormation"></a></div>
+            <nav>
+                
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="#" onclick="afficherNavbar()"> Formations</a></p>
+                
+                <p><a href="publicites.html"> Publicités</a></p>
+                <p><a href="a-propos.html">A propos</a></p>
+            </nav>
+            <span id="navbar" class="navbar">
+                <div>
+                    <p><a href="#" onclick="afficherNavmath()">Domaine des mathématiques</a></p>
+                    <p><a href="#" onclick="afficherNavinfo()">Domaine de l'Informatique</a></p>
+                </div>
+            </span>
+            
+            <span id="navmath" class="navmath">
+                <div>
+                    <p><a href="seconde.html" >Seconde</a></p>
+                    <p><a href="premiere.html">Première</a></p>
+                    <p><a href="terminale.html">Terminale</a></p>
+                </div>
+
+            </span>
+            <span id="navinfo" class="navinfo">
+                <div>
+                    <p><a href="initiation.html">Initiation</a></p>
+                    <p><a href="algorithmique.html">Algorithmique</a></p>
+                    <p><a href="python.html">Python</a></p>
+                </div>
+
+            </span>
+        </header>
+
+        <!-- Le corps de la page de formation -->
+        <main>
+            <!-- première section -->
+            <section>
+                <h1>Mathématiques</h1>
+                <h2>Histoires des mathématiques</h2>
+                <p>
+                    Les premiers développements mathématiques ont eu lieu dans les civilisations antiques,
+                     telles que la Mésopotamie et l'Égypte. <br>
+
+                    Les mathématiques grecques, avec des figures telles que Pythagore, Euclide et Archimède, 
+                    ont été largement étudiées et ont jeté les bases de la géométrie et de l'algèbre. <br>
+
+                    Les mathématiques indiennes ont également connu des développements importants, notamment 
+                    avec la découverte des nombres entiers négatifs, des fractions et du système décimal. <br>
+
+                    Pendant le Moyen Âge, les mathématiques ont été principalement étudiées dans le cadre de la 
+                    théologie et de la philosophie, mais des avancées importantes ont été faites dans l'algèbre et
+                     la trigonométrie. <br>
+                    La Renaissance a vu la redécouverte des mathématiques grecques, ainsi que des développements 
+                    importants dans le domaine de la géométrie analytique. <br>
+
+                    Au XVIIe siècle, Isaac Newton et Gottfried Leibniz ont développé le calcul infinitésimal, 
+                    permettant l'étude des phénomènes continus tels que le mouvement et la lumière. <br>
+                </p>
+                <h2>Pourquoi faire les mathématiques?</h2>
+                <p>
+                    Les mathématiques sont un domaine très important et utile dans de nombreux aspects de la vie moderne. Voici quelques raisons pour lesquelles les mathématiques sont importantes aujourd'hui :
+
+Sciences et technologie : Les mathématiques sont la base des sciences et de la technologie modernes. Elles sont utilisées pour résoudre des problèmes complexes dans des domaines tels que la physique, la chimie, la biologie, l'informatique et l'ingénierie.
+
+Finance et économie : Les mathématiques sont également utilisées pour l'analyse et la gestion des risques financiers, pour la modélisation de la croissance économique, pour l'optimisation des portefeuilles d'investissement 
+                </p>
+            </section>
+
+
+
+        </main>
+
+
+
+        <footer>
+            <!-- Pied de page par défaut -->
+            <div>
+                <a href=""><img src="image/icons8-mail-50.png" alt="wwww.gmail.com"></a>
+            </div>
+            <div>
+                <a href=""><img src="image/icons8-tic-tac-50.png" alt="tictok"></a>
+            </div>
+            <div>
+                <a href=""><img src="image/icons8-whatsapp-50.png" alt="whatsapp"></a>
+            </div>
+            <div>
+                <a href=""><img src="image/icons8-youtube-50.png" alt="www.youtube.com"></a>
+            </div>
+        </footer>
+    </body>
+</html>
